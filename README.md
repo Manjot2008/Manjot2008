@@ -31,4 +31,13 @@ I love turning ideas into real-world tech projects 💡✨
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/manjot-singh-296a48377)
 
+## 🌐 Portfolio
+
+🚀 Check out my personal portfolio website here:
+
+🔗 https://manjot2008.github.io/Manjot2008/
+
+##   Contact me HERE
+
+🔗 1588manjotsingh7b@gmail.com
 

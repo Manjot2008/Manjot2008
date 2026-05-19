@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjot Singh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Big wavy glowing circles */
+    .circle-right, .circle-left {
+      position: fixed;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #00bfff, #1e90ff, #87cefa);
+      animation: rotateWave 15s linear infinite, floatWave 5s ease-in-out infinite;
+      filter: blur(25px);
+      opacity: 0.78;
+      z-index: 0;
+    }
+    .circle-right {
+      top: -150px;
+      right: -170px;
+    }
+    .circle-left {
+      top: 40%;
+      left: -180px;
+    }
+    @keyframes rotateWave {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes floatWave {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(25px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* Cursor glow follower */
+    .cursor-glow {
+      position: fixed;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(0,191,255,0.45), rgba(30,144,255,0.12), rgba(0,0,0,0));
+      filter: blur(20px);
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      transition: transform 0.08s linear;
+    }
+
+    /* Header */
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    header h1 { font-size: 3em; color: #00bfff; }
+    header p { font-size: 1.2em; margin-top: 10px; color: #ccc; }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin: 20px 10px 0;
+      padding: 12px 25px;
+      color: #fff;
+      background: #1e90ff;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #00bfff; transform: scale(1.05); }
+
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1e90ff;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+      color: #ccc;
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .project-card {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,191,255,0.5);
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #00bfff;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #111;
+      color: #777;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .projects { flex-direction: column; }
+      .circle-right, .circle-left { display: none; } /* optional on mobile */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cursor-glow"></div>
+  <div class="circle-right"></div>
+  <div class="circle-left"></div>
+
+  <header>
+    <h1>Hey, I'm Manjot Singh</h1>
+    <p>Robotics | AI | Web Developer</p>
+    <a href="#projects" class="btn">Wanna See Some Magic</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A cool Movie Recomendation System.</p>
+        <a href="https://github.com/1588manjotsingh7b/movies_recomendator_sys">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A Web Application For Olympic data Analysis.</p>
+        <a href="https://github.com/1588manjotsingh7b/Olympics-analyzer/tree/main">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Another web dev project showing my coding skills.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mail to:1588manjotsingh7b@gmail.com" style="color:#00bfff;">1588manjotsingh7b@gmail.com</a></p>
+    <p>
+  <a href="https://github.com/1588manjotsingh7b" class="btn" style="margin: 10px;">GitHub</a>
+  <a href="https://www.linkedin.com/in/manjot-singh-296a48377/" class="btn" style="margin: 10px;">LinkedIn</a>
+</p>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Manjot Singh | Made with ❤️
+  </footer>
+
+  <script>
+    const glow = document.querySelector(".cursor-glow");
+    document.addEventListener("mousemove", (e) => {
+      glow.style.left = e.clientX + "px";
+      glow.style.top = e.clientY + "px";
+    });
+  </script>
+
+</body>
+</html>

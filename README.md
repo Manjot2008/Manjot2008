@@ -16,8 +16,9 @@ Python • AI • Machine Learning • OpenCV • Robotics • NodeMCU • GitHu
 ## Certifications & Achievements
 
 - 🎓 Completed the AI Tools & ChatGPT Workshop by be10x
-- 🤖 Learned practical applications of AI for coding, presentations, and productivity
-- 🚀 Exploring real-world uses of AI in automation and development$0
+- 🤖 Completed AI For Youth Bootcamp By AISC From 9 Octuber 2023 - 27 Octuber 2023
+- 🤖 Completed AI For Youth Bootcamp By AISC From 6 November 2023 - 21 November 2023
+- 🚀 Participated in AI Impact Festival 2024 Under Impact Creators Class 9 to 12 
 
 ## Current Projects
 
